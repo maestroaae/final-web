@@ -148,3 +148,72 @@ nav ul li a:hover {
       grid-auto-columns: 100%;
     }
   }
+  /*Reviews section*/
+  .review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.review-heading{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: black;
+    padding: 10px 20px;
+}
+.review-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.review-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile .image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+}
+.user strong{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.user span{
+    font-size: 0.8rem;
+}
+.grade{
+  color: #Fd4556;
+}
+.review-box:hover{
+  transform: translateY(-5px);
+  transition: all ease 0.3s;
+}
