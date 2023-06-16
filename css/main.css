@@ -21,13 +21,18 @@ nav {
     padding-right: 10%;
 }
 .logo {
-    color: #fff;
-    font-size: 30px;
+    font-size: 45px;  
+}
+.logo a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 nav ul li {
     list-style-type: none;
     display: inline-block;
     margin: 0 20px;
+    font-size: 20px;
 }
 nav ul li a{
     color: #fff;
@@ -38,14 +43,26 @@ nav ul li a:hover {
     color: purple;
     transition: .3s;        
 }
+.logo a:hover{
+  color: purple;
+  transition: .3s;
+}
 /*Carousel section*/
 .teachers{
-    display: flex;
+  display: flex;
   padding: 0 35px;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
   background: #fad193;
+}
+.teacher-head{
+  text-align: center;
+  color: black;
+  background-color: #fad193;
+}
+.teacher-head h2{
+  font-size: 40px;
 }
 .wrapper {
     max-width: 1100px;
@@ -155,12 +172,17 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 40px;
+    padding-top: 30px;
 }
 .review-heading{
-    font-size: 2.2rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: black;
     padding: 10px 20px;
+}
+.review-heading h2{
+  font-size: 40px;
 }
 .review-box-container{
     display: flex;
@@ -175,6 +197,8 @@ nav ul li a:hover {
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    background-color: #f0d9b9;
+    
 }
 .box-top{
     display: flex;
@@ -204,16 +228,159 @@ nav ul li a:hover {
     flex-direction: column;
 }
 .user strong{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
 }
 .user span{
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+.comment{
+  font-size: 1.3rem;
 }
 .grade{
-  color: #Fd4556;
+  color: yellow;
 }
 .review-box:hover{
   transform: translateY(-5px);
   transition: all ease 0.3s;
+}
+/*About Us*/
+.aboutus{
+  background:#b39467;
+  padding-bottom: 15px;
+}
+.about-head{
+  text-align: center;
+  padding-top: 30px;
+}
+.about-head h2{
+  font-size: 40px;
+}
+.text{
+  padding-top: 30px;
+  font-size: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: 300;
+  background-position: center center;
+  text-align: center;
+}
+/*Courses section*/
+.courses{
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #d3c67b;
+}
+.content{
+  max-width: 1090px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ .content .card{
+  background: #fff;
+  width: calc(33% - 20px);
+  text-align: center;
+  padding: 15px 30px  30px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.content .card .top{
+  height: 130px;
+  color: #fff;
+  padding: 12px 0 0 0 ;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+}
+.content .card .top .title{
+ font-size: 27px;
+ font-weight: 600;
+}
+.content .card .top .price-sec{
+  margin-top: -10px;
+  font-weight: 600;
+}
+.content .card .top .price{
+  font-size: 45px;
+}
+.content .card .info{
+  font-size: 16px;
+  margin-top: 20px;
+}
+.content .card .details .one{
+  margin-top: 25px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.content .card .details .one::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #ddd;
+  height: 1px;
+  left: 0;
+  top: -12px;
+  border-radius: 25px;
+}
+.content .card .details .one i{
+  color: #2db94d;
+}
+.content .card .details i.fa-times{
+  color: #cd3241;
+}
+.content .card button{
+  outline: none;
+  border: none;
+  height: 42px;
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.content .one .top,
+.content .one button{
+  background: #158f48;
+}
+.content .two .top,
+.content .two button{
+  background: yellowgreen;
+}
+.content .three .top,
+.content .three button{
+  background: purple;
+}
+.content button:hover {
+  filter: brightness(90%);
+}
+.content .one ::selection{
+background: #8af5b6;
+}
+.content .two ::selection{
+background:  #f2b08c;
+}
+.content .three ::selection{
+background: #d0f9fb;
+}
+@media (max-width:1000px) {
+   .content .card{
+    background: #fff;
+    width: calc(50% - 20px);
+    margin-bottom: 30px;
+}
+}
+@media (max-width:715px) {
+ .content .card{
+    width: 100%;
+}
 }
