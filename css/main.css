@@ -1,7 +1,25 @@
+body {
+  font-family: var(--outfit);
+  background-color: var(--Backgroundcolor);
+  overflow-x: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+:root {
+  --outfit:"Outfit",sans-serif;
 }
 .banner{
     background-image: url(../images/backgroung1.webp);
@@ -47,6 +65,13 @@ nav ul li a:hover {
   color: purple;
   transition: .3s;
 }
+.banner img{
+  border-radius: 50%;
+  display: inline;
+}
+#music-icon{
+  cursor: pointer;
+}
 /*Carousel section*/
 .teachers{
   display: flex;
@@ -54,12 +79,12 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  background: #fad193;
+  background: hsl(66, 28%, 66%);
 }
 .teacher-head{
   text-align: center;
   color: black;
-  background-color: #fad193;
+  background-color: hsl(66, 28%, 66%);
 }
 .teacher-head h2{
   font-size: 40px;
@@ -197,7 +222,7 @@ nav ul li a:hover {
     padding: 20px;
     margin: 15px;
     cursor: pointer;
-    background-color: #f0d9b9;
+    background-color: hsl(50, 43%, 50%);
     
 }
 .box-top{
@@ -246,18 +271,18 @@ nav ul li a:hover {
 }
 /*About Us*/
 .aboutus{
-  background:#b39467;
-  padding-bottom: 15px;
+  background:hsl(66, 28%, 66%);
+  padding-bottom: 70px;
 }
 .about-head{
   text-align: center;
-  padding-top: 30px;
+  padding-top: 70px;
 }
 .about-head h2{
   font-size: 40px;
 }
 .text{
-  padding-top: 30px;
+  padding-top: 70px;
   font-size: 30px;
   margin-left: 20%;
   margin-right: 20%;
@@ -267,7 +292,7 @@ nav ul li a:hover {
 }
 /*Courses section*/
 .courses{
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,6 +373,11 @@ nav ul li a:hover {
   cursor: pointer;
   letter-spacing: 1px;
 }
+.content .card button a{
+  text-decoration: none;
+  color: white  ;
+  font-weight: 500;
+}
 .content .one .top,
 .content .one button{
   background: #158f48;
@@ -383,4 +413,82 @@ background: #d0f9fb;
  .content .card{
     width: 100%;
 }
+}
+/*Footer*/
+.footer {
+  background-color: hsl(66, 28%, 66%);
+  width: 100%;
+  padding: 70px 30px 20px; 
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+/* Social Animations --------------------------*/
+.socials a:hover {
+  background-color: black;
+  transition: 0.5s
+}
+
+.socials a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+/* Footer Navigations -----------------------*/
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a {
+  color: hsl(0, 12%, 10%);
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerBottom {
+  background-color: hsl(66, 28%, 66%);
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.design {
+  font-size: 0.9rem;
+  color: hsl(50, 43%, 50%);
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+  color: white;
+}
+/* Footer Animations */
+.footerNav ul li a:hover {
+  opacity: 1;
+  color: hsl(72, 95%, 68%);
 }
