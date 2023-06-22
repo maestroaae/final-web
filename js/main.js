@@ -70,5 +70,18 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-/*Courses section */
 
+/*Song */
+var MySong = document.getElementById("mysong")
+var icon = document.getElementById("music-icon")
+
+icon.onclick = function(){
+    if(MySong.paused){
+        MySong.play();
+        icon.src="../images/pause.png"
+    }
+    else{
+            MySong.pause();
+            icon.src="../images/play.png"
+        }
+}
