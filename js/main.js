@@ -77,10 +77,10 @@ var icon = document.getElementById("music-icon")
 icon.onclick = function(){
     if(MySong.paused){
         MySong.play();
-        icon.src="../images/pause.png"
+        icon.src="images/pause.png"
     }
     else{
             MySong.pause();
-            icon.src="../images/play.png"
+            icon.src="images/play.png"
         }
 }
